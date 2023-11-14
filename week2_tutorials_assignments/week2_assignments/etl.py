@@ -448,7 +448,11 @@ def etl(path: Path,
     correct_condition_values=['poor', 'tolerable', 'satisfactory', 'good', 'excellent']
     ### START CODE HERE
     df = data_extraction(path, correct_condition_values)
+<<<<<<< HEAD
     context = gx.get_context(project_root_dir=gx_context_root_dir)
+=======
+    context = gx.get_context(context_root_dir=gx_context_root_dir)
+>>>>>>> 2dc71ae (update)
 
     batch_request = batch_creator(df, context, gx_datasource_name)
 
