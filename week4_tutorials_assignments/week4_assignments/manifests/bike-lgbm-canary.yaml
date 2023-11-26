@@ -5,7 +5,12 @@ metadata:
   namespace: kserve-inference
 spec:
   predictor:
+    canaryTrafficPercent: 30
     serviceAccountName: kserve-sa
     ### START CONF HERE
-    
+    model:
+      modelFormat:
+        name: mlflow
+      protocolVersion: v2
+      storageUri: "s3://mlflow/5/0b4b634c604b4e49a92e6ac50fc43284/artifacts/lgbm-bike"    
     ### END CONF HERE

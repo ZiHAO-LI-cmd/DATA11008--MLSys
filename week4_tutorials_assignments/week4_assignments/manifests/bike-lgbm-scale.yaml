@@ -7,5 +7,13 @@ spec:
   predictor:
     serviceAccountName: kserve-sa
     ### START CONF HERE
-    
+    minReplicas: 2
+    maxReplicas: 8
+    scaleTarget: 5
+    scaleMetric: concurrency
+    model:
+      modelFormat:
+        name: mlflow
+      protocolVersion: v2
+      storageUri: "s3://mlflow/5/c946adf98fd348a1bf993121f8133893/artifacts/model"       
     ### END CONF HERE
