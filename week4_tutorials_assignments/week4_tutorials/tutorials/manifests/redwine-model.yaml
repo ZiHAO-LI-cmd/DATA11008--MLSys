@@ -9,4 +9,4 @@ spec:
     model:
       modelFormat: 
         name: sklearn
-      storageUri: "s3://mlflow/12/9d75a172ed7543cd9619cb6ab5589258/artifacts/model" # change to the S3 URI of your model artifact
+      storageUri: "s3://mlflow/4/3d3df1aaa8a84dc99d70cfa56daab7b5/artifacts/model" # change to the S3 URI of your model artifact
